@@ -20,6 +20,18 @@ h1 {
   font-size: 2.5rem;
 }
 
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #ff9776;
+}
 /* 导航样式 */
 
 .nav-links {
@@ -62,6 +74,9 @@ h1 {
   .nav-links a {
     display: inline-block;
     padding: 15px 20px;
+  }
+    .hamburger {
+    display: none;
   }
 
 }
