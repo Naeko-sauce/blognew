@@ -1,21 +1,22 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
-const pageTitle = "首页";
+
+import BaseLayout from '../layouts/BaseLayout.astro'
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const pageTitle = "我的 Astro 学习博客";
+allPosts.map((pos:any)=>
+console.log(pos)
+)
+
 ---
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <Header />
-    <h1>{pageTitle}</h1>
-    <Footer />
- 
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <p>在这里，我将分享我的 Astro 学习之旅。</p>
+  <ul>
+  {
+    allPosts.map((pos:any )=>
+    
+    
+<li><a href={pos.url}>{pos.frontmatter.title} {pos.frontmatter.pubDate}</a>></li>
+)
+  }
+  </ul>
+</BaseLayout>
