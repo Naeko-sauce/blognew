@@ -14,7 +14,9 @@ const {pageTitle  } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle }</title>
   </head>
-  <script src="/menu.js" defer></script>
+  <script>
+    import "../scripts/menu.js";
+  </script>
   <body>
     <Header />
     <h1>{pageTitle }</h1>
