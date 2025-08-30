@@ -8,6 +8,6 @@ import BaseLayout from './BaseLayout.astro';
 <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
 <p><em>{frontmatter.description}</em></p>
 <p>作者：{frontmatter.author}</p>
-<img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
-<slot />
+{frontmatter.image && frontmatter.image.url && <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt || "文章图片"} />}
+<slot />description
 </BaseLayout>

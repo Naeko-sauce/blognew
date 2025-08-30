@@ -2,10 +2,11 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Astro 标签页实现详解"
 description: "详细解析 Astro 博客系统中标签页功能的实现原理和代码结构"
-createdDate: 2025-08-29
+pubDate: 2025-08-29
 author: "技术文档团队"
 alt: "Astro 标签页实现"
 tags: ["astro", "动态路由", "静态站点生成", "标签页", "前端开发"]
+
 ---
 
 # Astro 标签页实现详解
