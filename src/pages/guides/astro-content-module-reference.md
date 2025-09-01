@@ -1,3 +1,18 @@
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: "Astro 内容模块属性详解"
+description: "详细解释 Astro 框架中 Markdown/MDX 内容文件自动生成的模块属性及其用法"
+pubDate: 2025-08-30
+author: "技术文档团队"
+alt: "Astro 内容模块"
+image:
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+
+tags: ["astro", "内容模块", "frontmatter", "Getter属性", "静态站点生成"]
+
+---
+
 # Astro 内容模块属性详解
 
 本指南详细解释了在 Astro 框架中，Markdown/MDX 内容文件被导入时自动生成的模块属性及其用法。

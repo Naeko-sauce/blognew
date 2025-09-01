@@ -1,3 +1,17 @@
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: "项目特定 Git 提交指南"
+description: "详细指导如何为 blognew/blognai 项目提交代码并编写合适的注释"
+pubDate: 2025-08-28
+author: "技术文档团队"
+alt: "Git 提交指南"
+image:
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+
+tags: ["git", "版本控制", "代码提交", "注释规范", "项目管理"]
+---
+
 # 针对本项目的 Git 提交与注释指南
 
 本文档将详细指导你如何为当前的 blognew/blognai 项目提交代码并编写合适的注释，特别是针对你刚刚创建的文件。

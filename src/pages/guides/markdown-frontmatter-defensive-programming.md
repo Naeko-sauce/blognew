@@ -1,3 +1,17 @@
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: "Markdown Frontmatter 防御性编程指南"
+description: "详解在 MarkdownPostLayout.astro 中使用防御性编程处理前端数据安全渲染的方法"
+pubDate: 2025-08-29
+author: "技术文档团队"
+alt: "防御性编程"
+image:
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+
+tags: ["javascript", "防御性编程", "frontmatter", "错误处理", "Astro"]
+---
+
 # Markdown 文章布局中的防御性编程指南
 
 本指南整理了在 MarkdownPostLayout.astro 文件中处理前端数据安全渲染的问题和解决方案，重点介绍了如何使用防御性编程避免运行时错误。
