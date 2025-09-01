@@ -2,8 +2,8 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Markdown Frontmatter 防御性编程指南"
 description: "详解在 MarkdownPostLayout.astro 中使用防御性编程处理前端数据安全渲染的方法"
-pubDate: 2025-08-29
-author: "技术文档团队"
+pubDate: 2025-09-01
+author: "问题文档"
 alt: "防御性编程"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
