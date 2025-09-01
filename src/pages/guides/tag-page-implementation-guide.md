@@ -93,9 +93,16 @@ export async function getStaticPaths(){
    - 最终返回的是一个包含多个路由配置对象的数组
 
 4. `const filteredPosts = allPosts.filter((post: any) => post.frontmatter.tags.includes(tag));`
-   - 这行代码使用 `filter` 方法从所有文章中筛选出包含当前标签的文章
-   - `post.frontmatter.tags.includes(tag)` 是筛选条件，使用 `includes` 方法检查文章的标签数组中是否包含当前标签
+   - 这行代码使用 `filter` 方法从所有文章中筛选出包含**当前标签**的文章
+   - **为什么这里用 `tag` 而不是 `tags`？**
+     - `post.frontmatter.tags` 是一个数组，包含了某篇文章的**所有标签**
+     - 而 `tag` 是一个变量，表示当前我们正在处理的**单个特定标签**
+     - 我们需要判断的是：文章的所有标签（`tags`数组）中是否包含当前正在处理的那个特定标签（`tag`）
+     - 所以使用 `includes(tag)` 而不是 `includes(tags)`
+   - `includes()` 方法用于检查数组中是否包含某个特定元素，这里就是检查文章的标签数组是否包含当前标签
    - 这样确保了每个标签页面只显示与该标签相关的文章
+   
+   举个例子：假设我们有一篇文章的标签是 `["javascript", "frontend", "web"]`，当我们正在为 `"javascript"` 这个标签创建页面时，`tag` 变量的值就是 `"javascript"`，我们需要检查这篇文章的 `tags` 数组中是否包含 `"javascript"`。
 
 5. `return { params: { tag }, props: { posts: filteredPosts } };`
    - 返回一个路由配置对象，包含两个重要部分：
