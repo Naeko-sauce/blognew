@@ -3,7 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "Astro 标签详情页面实现指南"
 description: "详细解释为什么访问具体标签页面会出现404错误，以及如何在Astro中正确实现动态标签页面"
 pubDate: 2025-09-03
-author: "问题文档"
+author: "naiko"
 alt: "Astro 标签页面实现教程"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'

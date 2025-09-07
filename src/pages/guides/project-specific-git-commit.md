@@ -3,7 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "项目特定 Git 提交指南"
 description: "详细指导如何为 blognew/blognai 项目提交代码并编写合适的注释"
 pubDate: 2025-09-01
-author: "问题文档"
+author: "naiko"
 alt: "Git 提交指南"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'

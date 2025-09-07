@@ -3,7 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "Astro.glob 与 import.meta.glob 的区别与使用指南"
 description: "详细解释 Astro.glob 和 import.meta.glob 的差异、使用场景以及常见错误解决方法"
 pubDate: 2025-09-03
-author: "问题文档"
+author: "naiko"
 alt: "Astro glob 导入方法对比"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'

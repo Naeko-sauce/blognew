@@ -3,7 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "Astro 标签页实现详解"
 description: "详细解析 Astro 博客系统中标签页功能的实现原理和代码结构，包括filter、map方法区别与includes方法详解"
 pubDate: 2025-09-01
-author: "问题文档"
+author: "naiko"
 alt: "Astro 111"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'

@@ -3,7 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "Astro 同时访问多个目录内容详解"
 description: "详细介绍如何在 Astro 项目中同时访问 posts 和 guides 等多个目录下的文件内容"
 pubDate: 2025-09-01
-author: "问题文档"
+author: "naiko"
 alt: "Astro 多目录访问"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'

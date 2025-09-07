@@ -3,7 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "Astro 标签列表页面修复详解"
 description: "详细分析 tags/index.astro 文件中的链接错误原因，解释如何正确实现标签列表页面"
 pubDate: 2025-09-03
-author: "问题文档"
+author: "naiko"
 alt: "Astro 标签页面修复"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'

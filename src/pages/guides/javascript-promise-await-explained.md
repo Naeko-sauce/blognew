@@ -3,7 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "JavaScript Promise 和 await 详解"
 description: "深入解释什么是 Promise，为什么需要使用 await，以及在 Astro 框架中的应用场景"
 pubDate: 2025-09-03
-author: "问题文档"
+author: "naiko"
 alt: "JavaScript Promise 和 await 教程"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'

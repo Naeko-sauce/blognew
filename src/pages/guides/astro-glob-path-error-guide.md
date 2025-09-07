@@ -3,7 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "Astro.glob 路径错误详解与解决方案"
 description: "详细分析 Astro.glob() 路径错误问题，解释为什么会找不到文件，并提供正确的解决方案"
 pubDate: 2025-09-01
-author: "问题文档"
+author: "naiko"
 alt: "Astro 文件路径错误"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
