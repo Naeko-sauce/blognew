@@ -9,7 +9,7 @@ image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
 
-tags: ["astro", "动态路由", "静态站点生成", "标签页", "前端开发", "JavaScript数组方法"]
+tags: ["astro", "动态路由", "静态站点生成", "标签页", "前端开发", "JavaScript数组方法","flat","includes"]
 
 ---
 
