@@ -4,17 +4,23 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 // 标签页实现详细说明请参考 /guides/tag-page-implementation-guide
 export async function getStaticPaths(){
-  
-    const allPosts = Object.values(import.meta.glob('../pages/*.md', { eager: true }));
- const uniqueTags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())];
-   return uniqueTags.map((tag) => {
-    const filteredPosts = allPosts.filter((post: any) => post.frontmatter.tags.includes(tag));
-    return {
-      params: { tag },
-      props: { posts: filteredPosts },
-    };
-   
-});
+    
+    const allPosts = Object.values(import.meta.glob('../guides/*.md', { eager: true }));
+    // 安全地获取所有文章的标签
+    const allTags = allPosts
+        .map((post: any) => post.frontmatter.tags)
+        .filter(tags => tags !== undefined) // 过滤掉undefined
+        .flat();
+    const uniqueTags = [...new Set(allTags)];
+    
+    return uniqueTags.map((tag) => {
+        // 安全地过滤包含指定标签的文章
+        const filteredPosts = allPosts.filter((post: any) => post.frontmatter.tags && post.frontmatter.tags.includes(tag));
+        return {
+            params: { tag },
+            props: { posts: filteredPosts },
+        };
+    });
 }
 const {tag} = Astro.params;
 const { posts } = Astro.props;
