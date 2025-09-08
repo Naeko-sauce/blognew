@@ -1,6 +1,0 @@
-onlyBuiltDependencies:
-  - esbuild
-  - sharp
-
-# 允许运行构建脚本
-safe-perm: true
