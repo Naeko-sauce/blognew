@@ -16,7 +16,7 @@ console.log(pos)
     allPosts.map((pos:any )=>
     
     
-<li><a href={pos.url}>{pos.frontmatter.title} {pos.frontmatter.pubDate.toString().substring(0,10)}</a>></li>
+<li><a href={pos.url}>{pos.frontmatter.title} {pos.frontmatter.pubDate?.toString().substring(0,10) ?? ''}</a></li>
 )
   }
   </ul>
