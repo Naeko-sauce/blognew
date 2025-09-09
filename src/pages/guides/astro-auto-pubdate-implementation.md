@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
+
 title: "Astro pubDate 自动日期管理详解"
 description: "详细介绍如何实现 pubDate 自动获取日期功能，以及如何只在文件修改时更新日期的完整解决方案"
 pubDate: 2025-09-01
