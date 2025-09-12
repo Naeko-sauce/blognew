@@ -4,9 +4,6 @@ import { any } from 'astro:schema';
 import BaseLayout from '../layouts/BaseLayout.astro'
 const allPosts = Object.values(import.meta.glob(['./guides/*.md', './posts/*.md'], { eager: true }));
 const pageTitle = "我的 Astro 学习博客";
-allPosts.map((pos:any)=>
-console.log(pos)
-)
 
 ---
 <BaseLayout pageTitle={pageTitle}>
