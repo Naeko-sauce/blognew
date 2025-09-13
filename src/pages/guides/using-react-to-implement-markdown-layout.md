@@ -2,8 +2,8 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: '使用React实现Markdown文章布局'
 description: '用简单的方法教你如何用React实现类似Astro布局的Markdown文章展示效果'
-pubDate: 2024-01-15
-author: '技术助手'
+pubDate: 2025-09-13
+author: 'naiko'
 alt: 'React实现Markdown布局'
 tags: ["React", "Markdown", "布局", "前端开发"]
 ---

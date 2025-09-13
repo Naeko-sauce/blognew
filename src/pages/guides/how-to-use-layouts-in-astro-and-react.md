@@ -3,7 +3,7 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: '如何在 Astro 和 React 中使用布局系统'
 description: '详细解释 Astro 中的布局使用方法，以及与 React 布局实现的对比'
 pubDate: 2024-01-15
-author: '技术助手'
+author: 'naiko'
 image:
     url: 'https://example.com/layouts-guide.jpg'
     alt: '布局系统详解'
