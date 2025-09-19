@@ -1,8 +1,7 @@
----
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "在Astro中将frontmatter数据传递给React组件的完整指南"
 description: "详细讲解如何在Astro项目中实现将frontmatter数据传递给React组件，包括配置、实现和优化方案"
-pubDate: "2025-10-11"
+pubDate: "2024-10-11"
 author: "naiko"
 image:
   url: ""
