@@ -1,16 +1,33 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import PostPage from '../ReactComponents/Pages/PostPage.jsx';
+
 
 // 获取Astro props
 const props = Astro.props;
 const frontmatter = props.frontmatter;
 ---
 
-<BaseLayout pageTitle={frontmatter?.title || '无标题'}>
-  <PostPage frontmatter={frontmatter}>
-    <slot />
-  </PostPage>
+
+---
+<BaseLayout pageTitle={frontmatter.title || '无标题'}>
+  {frontmatter.description && <p><em>{frontmatter.description}</em></p>}
+  {frontmatter.pubDate && <p>{frontmatter.pubDate.toString().slice(0,10)}</p>}
+
+  {frontmatter.author && <p>作者：{frontmatter.author}</p>}
+
+  {frontmatter.image && frontmatter.image.url && (
+    <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt || ''} />
+  )}
+
+  {frontmatter.tags && frontmatter.tags.length > 0 && (
+    <div class="tags">
+      {frontmatter.tags.map((tag: string) => (
+        <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+      ))}
+    </div>
+  )}
+  <slot />
+
 </BaseLayout>
 <style>
   a {
