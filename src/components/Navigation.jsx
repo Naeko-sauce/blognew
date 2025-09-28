@@ -1,4 +1,4 @@
-import '../styles/global.scss'
+import '../styles/ReactComponentStyle/Navigation.scss'
 function Navigation(){
   return (
     <div className="nav-links">
