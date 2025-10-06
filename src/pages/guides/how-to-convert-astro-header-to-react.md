@@ -2,11 +2,12 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "如何将 Astro Header 组件转换为 React 组件"
 description: "详细讲解如何把现有的 Astro Header 组件重构为纯 React 组件"
-pubDate: 2023-11-16
-author: "技术专家"
-image: "/assets/blog/covers/react-astro-conversion.png"
-alt: "React 与 Astro 转换示意图"
-tags: ["React", "Astro", "组件转换", "前端开发"]
+pubDate: 2025-09-01
+author: "naiko"
+image:
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'React 与 Astro 转换示意图'
+tags: ["react", "astro", "组件转换", "前端开发"]
 ---
 
 # 如何将 Astro Header 组件转换为 React 组件
