@@ -104,10 +104,54 @@ const navLinks = [
 ];
 
 function Navigation() {
-  // 使用useLocation钩子获取当前路由信息
+  /*
+   * useLocation钩子是React Router提供的一个工具函数，用于获取当前页面的路由信息
+   * 
+   * 为什么要用它？举个例子：
+   * 想象一下你正在浏览一个博客网站，点击"关于"页面时，URL会变成"/about/"，但页面并没有真正刷新
+   * 在这种情况下，我们需要一种方式来知道用户现在看到的是哪个页面，这就是useLocation的作用
+   * 
+   * 实际应用：
+   * 当用户访问首页时，location.pathname会是 "/"
+   * 当用户访问关于页面时，location.pathname会是 "/about/"
+   * 当用户访问博客页面时，location.pathname会是 "/blog/"
+   * 
+   * 这个location对象还包含其他信息，比如：
+   * - search: URL中的查询参数，例如 "?sort=latest"
+   * - hash: URL中的哈希值，例如 "#section-1"
+   * - state: 可以通过导航传递的额外状态数据
+   * 
+   * 当用户点击导航链接或手动更改URL时，React Router会自动更新这个location对象
+   * 这意味着组件会重新渲染，我们就可以根据新的路径信息做相应的UI更新
+   */
   const location = useLocation();
   
-  // 判断链接是否为当前活动链接
+  /*
+   * isActive函数用于判断某个导航链接是否为当前活动状态
+   * 
+   * 详细工作原理：
+   * 这个函数接收一个path参数（比如 '/about/'），然后将其与当前URL的pathname进行比较
+   * 如果两者完全相同，函数返回true，表示这是当前活动链接；否则返回false
+   * 
+   * 举个实际例子：
+   * - 当用户在首页时，location.pathname === "/" 为 true
+   *   所以 isActive('/') 会返回 true，而 isActive('/about/') 会返回 false
+   * - 当用户在关于页面时，location.pathname === "/about/" 为 true
+   *   所以 isActive('/about/') 会返回 true，其他链接则返回 false
+   * 
+   * 实际应用场景：
+   * 在下面的JSX代码中，这个函数会被这样使用：
+   * className={isActive(link.path) ? 'active' : ''}
+   * 这行代码的意思是：如果当前链接是活动状态，就添加'active'类名，否则不添加任何类名
+   * 
+   * 为什么要有这样的逻辑？
+   * 这样我们就可以在CSS中为'active'类名设置特殊的样式（比如不同的颜色、加粗、下划线等）
+   * 让用户能够清楚地知道自己当前在哪个页面，提升用户体验
+   * 
+   * 可能的替代方案：
+   * 1. 使用React Router提供的NavLink组件，它内置了类似的功能
+   * 2. 如果需要更复杂的匹配逻辑（比如匹配路径的一部分），可以使用正则表达式或其他库函数
+   */
   const isActive = (path) => {
     return location.pathname === path;
   };
