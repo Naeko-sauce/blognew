@@ -1,4 +1,12 @@
 import '../styles/ReactComponentStyle/Navigation.scss'
+
+const navLinks = [
+  { id: 'home', label: '首页',path:'/'},
+  { id: 'home', label: '关于',path:'/about/'},
+  { id: 'home', label: '博客',path:'/blog/'},
+   { id: 'home', label: '博客',path:'/tags/'},
+]
+
 function Navigation(){
   return (
     <div className="nav-links">
