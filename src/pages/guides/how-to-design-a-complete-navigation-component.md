@@ -159,12 +159,35 @@ function Navigation() {
   return (
     <nav className="navigation">
       <div className="nav-links">
+        {/*
+         * 这里使用了JavaScript的map方法遍历navLinks数组，为每个链接创建一个<a>标签
+         * {
+         *   navLinks.map(link => (...))
+         * }
+         * 这整个结构是一个JSX表达式，用于动态生成多个元素
+         */}
         {navLinks.map(link => (
           <a
-            key={link.id}
-            href={link.path}
-            className={isActive(link.path) ? 'active' : ''}
+            key={link.id}  // key属性帮助React识别每个元素的唯一性，优化渲染性能
+            href={link.path}  // href属性使用花括号嵌入JavaScript表达式link.path
+            className={isActive(link.path) ? 'active' : ''}  // className属性使用三元运算符动态决定
           >
+            {/*
+             * 为什么这里不是用双重大括号？比如{{link.label}}？
+             * 
+             * 原因解释：
+             * 1. 在JSX中，花括号{}的作用是"打开一个JavaScript的窗口"
+             * 2. 当我们需要在JSX中嵌入JavaScript表达式的值时，只需要一对花括号
+             * 3. {link.label} 已经是一个完整的JavaScript表达式，它访问了link对象的label属性
+             * 4. 额外的花括号会被解释为JavaScript对象的语法，而不是JSX的嵌入语法
+             * 
+             * 举个例子：
+             * - 正确: {link.label} → 显示"首页"、"关于"等文本
+             * - 错误: {{link.label}} → 会被解析为一个对象 {link: label}，这不是我们想要的
+             * 
+             * 简单记忆规则：
+             * 在JSX中嵌入JavaScript表达式，一对花括号就够了！
+             */}
             {link.label}
           </a>
         ))}
@@ -184,7 +207,31 @@ export default Navigation;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 20px; // 设置链接之间的间距
+  /* 
+   * gap 属性 - 控制弹性容器(flex container)中子元素之间的间距
+   * 
+   * 什么是gap？
+   * - gap是CSS Grid和Flexbox布局中的一个属性，用于设置元素之间的间距
+   * - 当应用在display: flex;的容器上时，它会在所有直接子元素之间创建统一的间距
+   * 
+   * 这里的作用：
+   * - gap: 20px; 表示在导航链接之间设置20像素的间距
+   * - 这种间距只会出现在元素之间，不会出现在容器的边缘
+   * 
+   * 为什么用gap而不是其他方法？
+   * 1. 简洁：一行代码就能控制所有元素间距，不需要为每个元素单独设置margin
+   * 2. 精确：间距只会应用在元素之间，不会影响容器边缘的间距
+   * 3. 易维护：如果需要调整所有链接间距，只需修改一个值
+   * 
+   * 替代方案：
+   * - 使用margin-right: 20px;给除最后一个元素外的所有链接添加右外边距
+   *   但这种方法需要额外处理最后一个元素，且维护性较差
+   * - 使用padding结合calc()计算，但复杂度更高
+   * 
+   * 实际效果：
+   * - 在导航菜单中，每个链接之间会有20px的空间，使布局更清晰、不拥挤
+   */
+  gap: 20px;
   
   a {
     color: #333; // 默认为深灰色
