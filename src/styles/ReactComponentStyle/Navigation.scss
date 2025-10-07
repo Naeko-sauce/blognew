@@ -1,6 +1,12 @@
 .nav-links{
   display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
   a{
-    color: #f50303;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
   }
 }
