@@ -1,9 +1,15 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-publishDate: 2023-09-15
-author: John Doe
-title: 标签页面404错误原因与修复指南
-description: 详细解释为什么标签页面会返回404错误，以及如何修复这个问题
+title: "标签页面404错误原因与修复指南"
+description: "详细解释为什么标签页面会返回404错误，以及如何修复这个问题"
+pubDate: 2023-09-15
+author: "John Doe"
+alt: "标签页面404修复"
+image:
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: '标签页面错误修复示意图'
+
+tags: ["astro", "标签页面", "404错误", "前端开发", "路由问题"]
 ---
 
 # 标签页面404错误原因与修复指南

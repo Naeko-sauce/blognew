@@ -1,12 +1,15 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "详解 frontmatter.pubDate.toString().slice(0,10) 日期格式化方法"
 description: "深入解析 MarkdownPostLayout.astro 中日期格式化的实现原理和技术细节"
-pubDate: "2023-11-14"
+pubDate: 2023-11-14
 author: "naiko"
+alt: "日期格式化详解"
 image:
-  url: ""  
-  alt: "日期格式化图解"
-tags: ["JavaScript", "Astro", "日期处理", "frontmatter"]
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+
+tags: ["javascript", "astro", "日期处理", "frontmatter"]
 ---
 
 ## 为什么在 MarkdownPostLayout.astro 中使用 `toString().slice(0,10)` 来处理日期？

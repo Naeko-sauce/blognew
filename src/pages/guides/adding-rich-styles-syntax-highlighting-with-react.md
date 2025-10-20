@@ -1,13 +1,14 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: '使用React为Markdown文档添加简单样式改进'
-description: '用通俗易懂的方式讲解如何在Astro项目中使用React组件让Markdown文档更漂亮'
+title: "使用React为Markdown文档添加简单样式改进"
+description: "用通俗易懂的方式讲解如何在Astro项目中使用React组件让Markdown文档更漂亮"
 pubDate: 2024-01-15
-author: '技术助手'
-alt: 'Markdown样式美化实现'
+author: "技术助手"
+alt: "Markdown样式美化实现"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
+
 tags: ["react", "markdown", "样式", "astro"]
 ---
 

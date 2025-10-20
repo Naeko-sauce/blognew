@@ -1,11 +1,15 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'React与Astro布局实现对比详解'
-description: '深入解析如何让React实现达到与Astro布局相同的效果'
+title: "React与Astro布局实现对比详解"
+description: "深入解析如何让React实现达到与Astro布局相同的效果"
 pubDate: 2024-01-15
-author: '技术助手'
-alt: 'React与Astro布局对比'
-tags: ["React", "Astro", "布局", "前端开发", "组件设计"]
+author: "技术助手"
+alt: "React与Astro布局对比"
+image:
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+
+tags: ["react", "astro", "布局", "前端开发", "组件设计"]
 ---
 # React与Astro布局实现对比详解
 

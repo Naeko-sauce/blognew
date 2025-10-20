@@ -2,12 +2,15 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Astro RSS 订阅源配置完全指南"
 description: "详细解析如何在 Astro 项目中配置、使用和排查 RSS 订阅源功能，解决常见错误"
-pubDate: "2024-10-11"
+pubDate: 2024-10-11
 author: "naiko"
+alt: "Astro RSS 配置"
 image:
-  url: ""
-  alt: "Astro RSS 订阅源配置图解"
-tags: ["Astro", "RSS", "订阅源", "前端开发", "博客功能", "配置指南"]
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+
+
+tags: ["astro", "rss", "订阅源", "前端开发", "博客功能", "配置指南"]
 ---
 
 ## 什么是 RSS 订阅源？

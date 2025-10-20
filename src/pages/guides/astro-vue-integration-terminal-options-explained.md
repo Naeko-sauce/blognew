@@ -2,12 +2,14 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "Astro Vue 集成终端选项详解"
 description: "深入解析安装 Vue 到 Astro 项目时终端显示的各个选项、配置修改和技术含义"
-pubDate: "2024-10-11"
+pubDate: 2024-10-11
 author: "naiko"
+alt: "Astro 终端选项"
 image:
-  url: ""
-  alt: "Astro 终端选项解析图解"
-tags: ["Astro", "Vue", "终端选项", "配置修改", "前端开发", "工具链", "框架集成"]
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+
+tags: ["astro", "vue", "终端选项", "配置修改", "前端开发", "工具链", "框架集成"]
 ---
 
 ## Terminal#788-838 中显示的选项是什么？

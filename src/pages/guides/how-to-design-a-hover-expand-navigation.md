@@ -4,10 +4,12 @@ title: "如何设计悬停展开式圆形导航栏"
 description: "详细讲解设计一个平时为圆球形状、鼠标悬停时展开的导航栏的思路和实现方法"
 pubDate: 2025-09-01
 author: "naiko"
+alt: "悬停展开式导航栏设计"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: '圆形导航栏设计示意图'
-tags: ["前端设计", "UI/UX", "导航栏", "交互设计", "CSS动画"]
+
+tags: ["前端设计", "UI-UX", "导航栏", "交互设计", "CSS动画"]
 ---
 
 # 如何设计悬停展开式圆形导航栏

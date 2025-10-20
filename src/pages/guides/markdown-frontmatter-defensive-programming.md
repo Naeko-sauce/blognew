@@ -9,7 +9,7 @@ image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
 
-tags: ["javascript", "防御性编程", "frontmatter", "错误处理", "Astro"]
+tags: ["javascript", "防御性编程", "frontmatter", "错误处理", "astro"]
 ---
 
 # Markdown 文章布局中的防御性编程指南

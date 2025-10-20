@@ -6,8 +6,8 @@ pubDate: 2025-09-04
 author: "naiko"
 alt: "引入外部 MD 文档指南"
 image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
+  url: 'https://docs.astro.build/assets/rose.webp'
+  alt: 'The Astro logo on a dark background with a pink glow.'
 
 tags: ["react", "markdown", "react-markdown", "外部文件", "文件导入"]
 ---

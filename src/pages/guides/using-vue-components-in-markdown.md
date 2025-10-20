@@ -1,6 +1,5 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-
 title: "解决Markdown中无法使用Vue组件的问题"
 description: "深入分析为什么Vue组件在Markdown文件中不显示，并提供详细的配置和使用指南"
 pubDate: 2024-03-13

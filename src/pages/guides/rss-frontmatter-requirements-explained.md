@@ -2,12 +2,14 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "为什么修复 frontmatter 就能解决 RSS 构建报错？"
 description: "深入解析 Astro RSS 生成器对 Markdown 文件 frontmatter 的要求，以及为什么正确的格式能避免构建错误"
-pubDate: "2024-10-11"
+pubDate: 2024-10-11
 author: "naiko"
+alt: "RSS frontmatter 要求解析"
 image:
-  url: ""
-  alt: "RSS frontmatter 要求解析图解"
-tags: ["Astro", "RSS", "frontmatter", "YAML", "构建错误", "博客配置", "Markdown"]
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'RSS frontmatter 要求解析图解'
+
+tags: ["astro", "rss", "frontmatter", "yaml", "构建错误", "博客配置", "markdown"]
 ---
 
 ## 问题回顾

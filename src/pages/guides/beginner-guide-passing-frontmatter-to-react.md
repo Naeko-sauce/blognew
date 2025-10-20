@@ -2,12 +2,14 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "初学者指南：在Astro中将frontmatter数据传递给React组件"
 description: "简单易懂的入门指南，教你如何在Astro项目中实现将frontmatter数据传递给React组件"
-pubDate: "2024-10-11"
+pubDate: 2024-10-11
 author: "naiko"
+alt: "Astro React 数据传递"
 image:
-  url: ""
-  alt: "Astro与React组件数据传递图解"
-tags: ["Astro", "React", "frontmatter", "数据传递", "前端开发", "初学者"]
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+
+tags: ["astro", "react", "frontmatter", "数据传递", "前端开发", "初学者"]
 
 ---
 

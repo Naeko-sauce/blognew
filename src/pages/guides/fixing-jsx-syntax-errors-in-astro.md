@@ -1,14 +1,15 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: '修复 Astro 中的 JSX 语法错误：详细指南'
-description: '解释为什么会出现 JSX 语法错误，以及如何在 Astro 项目中正确使用 JSX 语法'
+title: "修复 Astro 中的 JSX 语法错误：详细指南"
+description: "解释为什么会出现 JSX 语法错误，以及如何在 Astro 项目中正确使用 JSX 语法"
 pubDate: 2024-01-15
-author: '技术助手'
-alt: '修复 JSX 语法错误'
+author: "技术助手"
+alt: "修复 JSX 语法错误"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["javascript", "jsx", "astro", "syntax-error","React合集"]
+
+tags: ["javascript", "jsx", "astro", "syntax-error", "React合集"]
 ---
 
 # 修复 Astro 中的 JSX 语法错误：详细指南

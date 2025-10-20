@@ -1,6 +1,5 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-
 title: "Astro动态路由[tag]是什么？简单说清楚"
 description: "用通俗易懂的语言和生活例子解释Astro中[tag].astro文件的作用、工作原理和使用方法"
 pubDate: 2024-03-13
@@ -11,7 +10,6 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 
 tags: ["astro", "动态路由", "入门教程", "标签页", "简单解释"]
-
 ---
 
 ## 什么是`[tag].astro`？

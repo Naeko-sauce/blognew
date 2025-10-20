@@ -9,7 +9,7 @@ image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
 
-tags: ["React", "Astro", "组件转换", "前端开发"]
+tags: ["react", "astro", "组件转换", "前端开发"]
 ---
 
 # 如何将Navigation.astro组件转换为React组件

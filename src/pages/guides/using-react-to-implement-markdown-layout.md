@@ -5,7 +5,11 @@ description: '用简单的方法教你如何用React实现类似Astro布局的Ma
 pubDate: 2025-09-13
 author: 'naiko'
 alt: 'React实现Markdown布局'
-tags: ["React", "Markdown", "布局", "前端开发"]
+image:
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'React与Markdown布局示意图'
+
+tags: ["react", "markdown", "布局", "前端开发"]
 ---
 # 使用React实现Markdown文章布局
 

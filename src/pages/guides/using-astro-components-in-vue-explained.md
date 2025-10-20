@@ -2,12 +2,14 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "在 Vue 组件中引用和使用 Astro 的完整指南"
 description: "深入解析如何在 Vue 组件中引用 Astro 组件、功能和数据，包括通信方式、限制和最佳实践"
-pubDate: "2024-10-11"
+pubDate: 2024-10-11
 author: "naiko"
+alt: "Vue Astro 组件引用"
 image:
-  url: ""
-  alt: "Vue 中引用 Astro 组件图解"
-tags: ["Astro", "Vue", "组件引用", "框架集成", "前端开发", "通信方式", "最佳实践"]
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'Vue 中引用 Astro 组件图解'
+
+tags: ["astro", "vue", "组件引用", "框架集成", "前端开发", "通信方式", "最佳实践"]
 ---
 
 ## 在 Vue 中引用 Astro 的核心概念

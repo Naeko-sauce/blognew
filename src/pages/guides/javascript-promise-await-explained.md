@@ -10,7 +10,6 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 
 tags: ["javascript", "promise", "async-await", "前端开发", "astro"]
-
 ---
 
 # JavaScript Promise 和 await 详解

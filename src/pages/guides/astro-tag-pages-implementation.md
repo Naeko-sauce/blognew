@@ -10,7 +10,6 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 
 tags: ["astro", "动态路由", "标签页面", "404错误", "前端开发"]
-
 ---
 
 # Astro 标签详情页面实现指南

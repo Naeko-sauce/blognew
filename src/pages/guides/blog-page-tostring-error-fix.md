@@ -1,12 +1,15 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "blog.astro页面toString()错误原因与修复指南"
 description: "详细解释为什么会出现\"Cannot read properties of undefined (reading 'toString')\"错误，以及如何修复这个问题"
-pubDate: "2023-11-14"
+pubDate: 2023-11-14
 author: "naiko"
+alt: "toString错误修复"
 image:
-  url: ""
-  alt: "toString错误修复图解"
-tags: ["JavaScript", "Astro", "错误处理", "可选链操作符", "空值合并操作符"]
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+
+tags: ["javascript", "astro", "错误处理", "可选链操作符", "空值合并操作符"]
 ---
 
 # blog.astro页面toString()错误原因与修复指南

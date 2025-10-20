@@ -1,12 +1,14 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: '如何在 Astro 和 React 中使用布局系统'
-description: '详细解释 Astro 中的布局使用方法，以及与 React 布局实现的对比'
+title: "如何在 Astro 和 React 中使用布局系统"
+description: "详细解释 Astro 中的布局使用方法，以及与 React 布局实现的对比"
 pubDate: 2024-01-15
-author: 'naiko'
+author: "naiko"
+alt: "Astro React 布局系统"
 image:
-    url: 'https://example.com/layouts-guide.jpg'
+    url: 'https://docs.astro.build/assets/rose.webp'
     alt: '布局系统详解'
+
 tags: ["astro", "react", "布局", "组件", "前端开发"]
 ---
 

@@ -1,6 +1,5 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-
 title: "解决Vue组件在Astro页面中不显示的问题"
 description: "深入分析为什么Vue组件在Astro页面中不显示，并提供详细的解决方案"
 pubDate: 2024-03-13

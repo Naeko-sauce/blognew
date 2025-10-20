@@ -4,12 +4,12 @@ title: "Astro 标签页实现详解"
 description: "详细解析 Astro 博客系统中标签页功能的实现原理和代码结构，包括filter、map方法区别与includes方法详解"
 pubDate: 2025-09-01
 author: "naiko"
-alt: "Astro 111"
+alt: "Astro 标签页实现"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
 
-tags: ["astro", "动态路由", "静态站点生成", "标签页", "前端开发", "JavaScript数组方法","flat","includes"]
+tags: ["astro", "动态路由", "静态站点生成", "标签页", "前端开发", "javascript数组方法", "flat", "includes"]
 
 ---
 

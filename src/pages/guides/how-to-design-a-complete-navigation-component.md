@@ -4,9 +4,11 @@ title: "如何设计一个完整的导航栏组件"
 description: "基于现有代码设计和优化一个功能完整的React导航栏组件"
 pubDate: 2025-09-01
 author: "naiko"
+alt: "导航栏设计"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: '导航栏设计示意图'
+
 tags: ["react", "导航栏", "组件设计", "样式", "交互"]
 ---
 

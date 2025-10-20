@@ -10,7 +10,6 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 
 tags: ["astro", "内容模块", "frontmatter", "Getter属性", "静态站点生成"]
-
 ---
 
 # Astro 内容模块属性详解

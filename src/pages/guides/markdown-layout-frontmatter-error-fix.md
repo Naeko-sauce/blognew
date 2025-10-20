@@ -2,12 +2,14 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "修复 MarkdownPostLayout 中的未定义属性错误(toString)"
 description: "详细分析并解决 Astro 博客中 MarkdownPostLayout 组件出现的无法读取未定义的属性(读取toString)错误"
-pubDate: "2024-10-11"
+pubDate: 2024-10-11
 author: "naiko"
+alt: "Markdown布局错误修复"
 image:
-  url: ""
-  alt: ""
-tags: ["Astro", "前端开发", "错误修复", "防御性编程", "部署问题"]
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+
+tags: ["astro", "前端开发", "错误修复", "防御性编程", "部署问题"]
 ---
 
 ## 问题现象

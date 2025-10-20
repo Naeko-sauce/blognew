@@ -2,12 +2,14 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "修复 pnpm 版本与 Vercel 部署问题"
 description: "详细分析并解决 Astro 项目在 Vercel 部署过程中的 pnpm 版本和构建脚本权限问题"
-pubDate: "2024-10-11"
+pubDate: 2024-10-11
 author: "naiko"
+alt: "pnpm Vercel 部署修复"
 image:
-  url: ""
-  alt: "pnpm 与 Vercel 部署配置图解"
-tags: ["pnpm", "Vercel", "部署问题", "版本管理", "Astro", "前端开发"]
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'pnpm 与 Vercel 部署配置图解'
+
+tags: ["pnpm", "vercel", "部署问题", "版本管理", "astro", "前端开发"]
 ---
 
 ## 问题背景

@@ -1,6 +1,5 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-
 title: "为Astro项目的Markdown文档添加丰富样式和语法高亮"
 description: "学习如何为你的Markdown文档添加特殊字体样式、代码高亮和符号颜色区分"
 pubDate: 2024-01-15
@@ -8,6 +7,9 @@ author: "技术助手"
 alt: "Markdown文档样式美化指南"
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+
+tags: ["markdown", "样式", "语法高亮", "astro", "文档美化"]
 ---
 
 # 为Astro项目的Markdown文档添加丰富样式和语法高亮

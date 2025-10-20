@@ -9,8 +9,7 @@ image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
 
-tags: ["astro", "路径错误", "文件导入", "Astro.glob", "import.meta.glob", "前端开发"]
-
+tags: ["astro", "路径错误", "文件导入", "astro.glob", "import.meta.glob", "前端开发"]
 ---
 
 ## 问题现象

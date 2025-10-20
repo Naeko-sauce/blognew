@@ -1,12 +1,15 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "修复标签页面中的 Cannot read properties of undefined (reading 'includes') 错误"
 description: "详细分析并解决 Astro 博客中标签页面出现的 'Cannot read properties of undefined (reading 'includes')' 错误"
-pubDate: "2023-11-14"
+pubDate: 2023-11-14
 author: "naiko"
+alt: "标签页面 includes 错误修复"
 image:
-  url: ""
-  alt: ""
-tags: ["Astro", "前端开发", "错误修复", "JavaScript"]
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: '标签页面错误修复示意图'
+
+tags: ["astro", "前端开发", "错误修复", "javascript"]
 ---
 
 ## 问题现象

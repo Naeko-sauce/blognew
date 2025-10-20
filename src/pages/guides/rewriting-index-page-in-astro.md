@@ -1,14 +1,15 @@
 ---
-layout: '../../layouts/MarkdownPostLayout.astro'
+layout: ../../layouts/MarkdownPostLayout.astro
 title: "重写 Astro 首页页面的完整指南"
 description: "详细解释如何优化和重写你的 Astro 项目首页，包括组件结构、内容组织和性能优化"
 pubDate: 2023-11-10
 author: "naiko"
 alt: "Astro 页面重写指南"
-image: {
-  url: "https://docs.astro.build/assets/rose.webp",
-  alt: "Astro Logo"
-}
+image:
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'Astro Logo'
+
+tags: ["astro", "首页优化", "前端开发", "页面结构"]
 ---
 
 # 重写 Astro 首页页面的完整指南

@@ -8,7 +8,11 @@ const pageTitle = "标签列表";
 ---
 <BaseLayout pageTitle={pageTitle}>
 <div class="tag-list">
-    {tags.map((tag:string) =><p><a href={`/tags/${tag}`}>{tag}</a></p>)}
+    {tags.map((tag:string) => {
+      // 对标签名进行URL编码，确保特殊字符（如斜杠/）不会被解释为路径分隔符
+      const encodedTag = encodeURIComponent(tag);
+      return <p><a href={`/tags/${encodedTag}`}>{tag}</a></p>;
+    })}
 </div>
 </BaseLayout>
 <style>

@@ -2,12 +2,14 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "三种安装 Vue 到 Astro 项目的方式详解"
 description: "深入分析 pnpm astro add vue、pnpm add @astrojs/vue 和 pnpm add vue 三种安装方式的区别、作用和适用场景"
-pubDate: "2024-10-11"
+pubDate: 2024-10-11
 author: "naiko"
+alt: "Astro Vue 集成"
 image:
-  url: ""
-  alt: "Astro Vue 集成方式图解"
-tags: ["Astro", "Vue", "集成方式", "pnpm", "前端开发", "框架配置", "工具链"]
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+
+tags: ["astro", "vue", "集成方式", "pnpm", "前端开发", "框架配置", "工具链"]
 ---
 
 ## 为什么会有三种不同的安装方式？

@@ -1,11 +1,15 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: '理解 Astro 中的 props 和 frontmatter'
-description: '深入解释 `const { frontmatter } = Astro.props;` 的作用和工作原理'
+title: "理解 Astro 中的 props 和 frontmatter"
+description: "深入解释 `const { frontmatter } = Astro.props;` 的作用和工作原理"
 pubDate: 2024-01-15
-author: '技术助手'
-alt: 'Astro props 和 frontmatter 详解'
-tags: ["Astro", "前端开发", "JavaScript", "Markdown"]
+author: "技术助手"
+alt: "Astro props 和 frontmatter 详解"
+image:
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'Astro props 和 frontmatter 示意图'
+
+tags: ["astro", "前端开发", "javascript", "markdown"]
 ---
 # 理解 Astro 中的 props 和 frontmatter
 

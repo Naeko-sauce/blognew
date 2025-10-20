@@ -10,7 +10,6 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 
 tags: ["astro", "导入方法", "glob", "前端开发", "常见错误"]
-
 ---
 
 # Astro.glob 与 import.meta.glob 的区别与使用指南
