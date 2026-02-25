@@ -19,7 +19,7 @@
   &:focus  -> 键盘选中时（无障碍访问）
   &:active -> 手机手指按下时
 */
-  &:hove,&:active,&:focus{
+  &:hover,&:active,&:focus{
     color: #00ff7f;
       /* 
       text-shadow (文字阴影)：
