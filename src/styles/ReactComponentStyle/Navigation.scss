@@ -21,6 +21,7 @@
 */
   &:hover,&:active,&:focus{
     color: #00ff7f;
+     background-color: rgba(0, 50, 20, 0.9);
       /* 
       text-shadow (文字阴影)：
 
@@ -35,7 +36,10 @@
        这种红绿撞色会产生一种视觉上的“错位感”和“不适感”，
        模拟精神受到干扰时的幻觉。
   */
-  text-shadow: 0 0 5px #00ff7f, 2px 2px 0px #ff1515;
+  text-shadow: 0 0 10px #00ff7f, 2px 2px 0px #ff1515;
+  transform: scale(1.1);
+   border: 1px solid #00ff7f;
+   border-radius: 4px;
   }
  }
  
