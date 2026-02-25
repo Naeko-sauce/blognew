@@ -1,14 +1,28 @@
 ---
+// 引入基础布局
 import BaseLayout from '../layouts/BaseLayout.astro';
+// 引入 Vue 组件
 import PageComponents from '../VueComponents/PageComponents.vue';
+// 引入 React 组件
 import Pag from '../ReactComponents/Pag'
+
 const pageTitle = "首页";
 ---
+<!-- 
+  使用 BaseLayout 作为页面的外层包裹。
+  将 pageTitle 传递给 BaseLayout，它会被设置到 HTML 的 <title> 标签中。
+-->
 <BaseLayout pageTitle={pageTitle}>
   <h2>我超棒的博客副标题</h2>
-<a href="/posts/p1">1111</a>
+  <a href="/posts/p1">1111</a>
 
-<PageComponents />
-<Pag />
+  <!-- 
+    Astro 的核心特性之一：混合使用框架。
+    在这里，我们同时渲染了一个 Vue 组件和一个 React 组件。
+    默认情况下，这些组件是静态渲染的（服务端渲染为 HTML），没有交互性。
+    如果需要交互（Hydration），需要添加 client:* 指令，比如 <Pag client:load />。
+  -->
+  <PageComponents />
+  <Pag />
 
 </BaseLayout>

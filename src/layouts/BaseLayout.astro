@@ -1,29 +1,46 @@
 ---
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.astro';
-// import '../styles/global.css';
+import '../styles/global.scss';
 
-const {pageTitle  } = Astro.props;
-
-
+// 从 Astro.props 获取页面标题
+// 使用 Layout 的页面会这样调用：<BaseLayout pageTitle="首页">
+const { pageTitle } = Astro.props;
 ---
+
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle }</title>
+    <title>{pageTitle}</title>
   </head>
+  
+  <!-- 
+    在 Astro 组件中引入客户端脚本。
+    这个脚本会处理汉堡菜单的点击事件。
+    因为它在 Layout 里，所以每个使用这个 Layout 的页面都会加载这个脚本。
+  -->
   <script>
     import "../scripts/menu.js";
   </script>
-  <body>
-    <Header />
-    <h1>{pageTitle }</h1>
-      <slot />
-    <Footer />
-   
 
+  <body>
+    <!-- 放置公共头部 -->
+    <Header />
+    
+    <!-- 显示当前页面的标题 -->
+    <h1>{pageTitle}</h1>
+    
+    <!-- 
+      <slot /> 是插槽。
+      它是一个占位符，代表了使用这个 Layout 的页面传递进来的所有内容。
+      比如 index.astro 里的所有内容，都会被“插入”到这里。
+    -->
+    <slot />
+    
+    <!-- 放置公共尾部 -->
+    <Footer />
   </body>
 </html>

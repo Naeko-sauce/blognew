@@ -1,16 +1,37 @@
 ---
-
+// 引入 Social 组件，用于显示社交媒体链接
+// 这是一个 Astro 组件，可以在这里像 HTML 标签一样使用
 import Social from "./Social.astro";
 ---
 
-
-  <footer>
-  
+<!-- 
+  footer 标签定义了页面的底部区域。
+  这个组件会在每个页面的底部被引用，保持全站底部一致。
+-->
+<footer>
+  <!-- 
+    使用 Social 组件。
+    platform 和 username 是传递给 Social 组件的 props（属性）。
+    Social 组件内部会使用这些属性生成对应的链接。
+    这样做的好处是：如果我想改样式，只需要改 Social.astro 一个文件，
+    而不需要在每个写死 <a> 标签的地方去改。
+  -->
   <Social platform="twitter" username="astrodotbuild" />
   <Social platform="github" username="withastro" />
   <Social platform="youtube" username="astrodotbuild" />
 </footer>
+
 <style lang="scss">
+  /* 
+    使用 SCSS 编写样式。
+    scoped 样式：这些样式默认只应用于这个组件内部，不会污染其他组件。
+  */
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
   a{
     paint-order: 0.5rem 1rem;
     color: pink;

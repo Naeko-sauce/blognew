@@ -1,22 +1,31 @@
 ---
-
-
 import BaseLayout from '../layouts/BaseLayout.astro'
-const allPosts = Object.values(import.meta.glob(['./guides/*.md', './posts/*.md'], { eager: true }));
-const pageTitle = "我的 Astro 学习博客";
 
+// 使用 Astro.glob 获取所有的 Markdown 文章
+// import.meta.glob 是 Vite 的功能，用于批量导入文件。
+// eager: true 表示直接加载模块，而不是懒加载。
+const allPosts = Object.values(import.meta.glob(['./guides/*.md', './posts/*.md'], { eager: true }));
+
+const pageTitle = "我的 Astro 学习博客";
 ---
 <BaseLayout pageTitle={pageTitle}>
   <p>在这里，我将分享我的 Astro 学习之旅。</p>
   <ul>
   {
+    /* 
+      遍历所有获取到的文章，生成列表。
+      pos.url 是 Astro 自动生成的页面路径。
+      pos.frontmatter 包含文章头部的元数据（标题、日期等）。
+    */
     allPosts.map((pos:any )=>
-    
-    
-    
-<li><a href={pos.url}>{pos.frontmatter.title} {pos.frontmatter.pubDate?.toString().substring(0,10) ?? ''}</a></li>
-<li><a href={pos.url}>{pos.frontmatter.description}</a></li>
-)
+      <li>
+        <a href={pos.url}>
+          {pos.frontmatter.title} 
+          {/* 安全地格式化日期，如果存在的话 */}
+          {pos.frontmatter.pubDate?.toString().substring(0,10) ?? ''}
+        </a>
+      </li>
+    )
   }
   </ul>
 </BaseLayout>

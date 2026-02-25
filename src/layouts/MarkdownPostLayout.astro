@@ -1,24 +1,33 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 
-
-// 获取Astro props
+// 获取 Markdown 文件的 frontmatter 数据
+// 当我们在 Markdown 文件中使用 layout: ../../layouts/MarkdownPostLayout.astro 时
+// Astro 会自动把 frontmatter 作为 props 传进来。
 const props = Astro.props;
 const frontmatter = props.frontmatter;
 ---
 
-
----
+<!-- 
+  嵌套 Layout：MarkdownPostLayout 内部使用了 BaseLayout。
+  这样 Markdown 页面也能拥有统一的 HTML 结构、Header 和 Footer。
+  我们把 frontmatter 里的 title 传给 BaseLayout 作为页面标题。
+-->
 <BaseLayout pageTitle={frontmatter.title || '无标题'}>
+  <!-- 条件渲染：如果有 description 字段才显示 -->
   {frontmatter.description && <p><em>{frontmatter.description}</em></p>}
+  
+  <!-- 格式化日期：只取前10位 (YYYY-MM-DD) -->
   {frontmatter.pubDate && <p>{frontmatter.pubDate.toString().slice(0,10)}</p>}
 
   {frontmatter.author && <p>作者：{frontmatter.author}</p>}
 
+  <!-- 图片渲染：如果有 image 且有 image.url 才显示 -->
   {frontmatter.image && frontmatter.image.url && (
     <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt || ''} />
   )}
 
+  <!-- 标签列表渲染 -->
   {frontmatter.tags && frontmatter.tags.length > 0 && (
     <div class="tags">
       {frontmatter.tags.map((tag: string) => (
@@ -26,10 +35,19 @@ const frontmatter = props.frontmatter;
       ))}
     </div>
   )}
+
+  <!-- 
+    这里是 Markdown 文章的正文内容。
+    当 Markdown 文件使用这个 Layout 时，文章内容会被渲染到 <slot /> 位置。
+  -->
   <slot />
 
 </BaseLayout>
+
 <style>
+  /* 
+    文章详情页的特定样式 
+  */
   a {
     color: #00539F;
   }

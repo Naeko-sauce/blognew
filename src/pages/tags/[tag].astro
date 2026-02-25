@@ -1,40 +1,51 @@
 ---
-  
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-// 标签页实现详细说明请参考 /guides/tag-page-implementation-guide
+// getStaticPaths 是 Astro 生成动态路由的关键函数。
+// 因为是静态站点生成 (SSG)，Astro 需要在构建时知道所有的路由（比如 /tags/astro, /tags/react）。
+// 这个函数返回一个数组，每个对象代表一个要生成的页面路径。
 export async function getStaticPaths(){
     
+    // 获取所有的 Markdown 文章
     const allPosts = Object.values(import.meta.glob('../guides/*.md', { eager: true }));
-    // 安全地获取所有文章的标签
+    
+    // 1. 提取所有文章的标签
+    // flat() 把 [[tag1, tag2], [tag2, tag3]] 展平为 [tag1, tag2, tag2, tag3]
     const allTags = allPosts
         .map((post: any) => post.frontmatter.tags)
-        .filter(tags => tags !== undefined) // 过滤掉undefined
+        .filter(tags => tags !== undefined) // 过滤掉没有标签的文章
         .flat();
+        
+    // 2. 去重，得到所有唯一的标签列表
     const uniqueTags = [...new Set(allTags)];
     
+    // 3. 为每个标签生成一个路由对象
     return uniqueTags.map((tag) => {
-        // 安全地过滤包含指定标签的文章
+        // 找到包含当前标签的所有文章
         const filteredPosts = allPosts.filter((post: any) => post.frontmatter.tags && post.frontmatter.tags.includes(tag));
+        
+        // 返回 params (用于路由路径 /tags/[tag]) 和 props (传递给页面的数据)
         return {
             params: { tag },
             props: { posts: filteredPosts },
         };
     });
 }
+
+// 从 params 中获取当前页面的标签 (比如 "astro")
 const {tag} = Astro.params;
+// 从 props 中获取包含该标签的文章列表
 const { posts } = Astro.props;
 
-
-
-
+// 注意：这里的 filteredPosts 逻辑实际上在 getStaticPaths 里已经做过了并通过 props 传进来了。
+// 下面这行其实是多余的，但保留它也没问题，它再次过滤了一遍。
 const filteredPosts = posts.filter((posts:any)=> posts.frontmatter.tags && posts.frontmatter.tags.includes(tag));
-
-
 ---
+
 <BaseLayout pageTitle={tag}>
   <p>包含「{tag}」标签的文章</p>
     <ul>
+    <!-- 遍历文章列表，生成链接 -->
     {filteredPosts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
   </ul>
 </BaseLayout>

@@ -1,45 +1,61 @@
 ---
-
 import Navigation from '../components/Navigation.jsx';
+
 const pageTitle = "关于我";
+
+// 定义页面数据
 const identiy = {
     name: "Astro 学习者",
     description: "这是一个关于我学习 Astro 的个人页面。",
-    email: ["摄影", "编程", ],
+    email: ["摄影", "编程", ], // 这里的字段名 email 似乎有点奇怪，内容看起来像是 hobbies
 }
+
+// 定义 CSS 变量的值
 const ac = "navy"
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 ---
+
 <html lang="zh-CN">
   <head>
     <meta charset ="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{pageTitle}</title>
   </head>
+  
+  <!-- 
+    define:vars 指令用于将 Frontmatter 中的 JS 变量传递给 CSS。
+    在这里，我们把 ac 变量传给了 CSS 变量 --ac。
+  -->
   <style define:vars={{ ac }}>
-   
     .skk{
-        color:var(--ac);
+        color:var(--ac); /* 使用传递进来的变量 */
         font-size: 5rem;
     }
   </style>
+  
   <body>
     <Navigation />
+    
     <h1>{pageTitle}</h1>
     <h2>……和我的新 Astro 网站！</h2>
 
     <p>我正在学习 Astro 的入门教程。这是我网站上的第二个页面，也是我自己建立的第一页面！</p>
 
     <p>随着我完成更多教程，该站点将更新，所以请继续查看我的旅程将如何进行吧！</p>
+    
     <li class="skk">my{identiy.name}</li>
     <li>这是一个介绍</li>
     <p>{identiy.description}</p>
-   <ul>
+    
+    <ul>
     {
-    identiy.email.length >= 2 &&
-    <li>我的两个习惯：{identiy.email[0]}和{identiy.email[1]}</li>
-  }
-  {skills.map(a => <li>{a}</li> )}
+      /* 条件渲染：如果爱好数量大于等于2，则显示 */
+      identiy.email.length >= 2 &&
+      <li>我的两个习惯：{identiy.email[0]}和{identiy.email[1]}</li>
+    }
+    
+    {/* 列表渲染：显示所有技能 */}
+    {skills.map(a => <li>{a}</li> )}
    </ul>
 </body>
 </html>

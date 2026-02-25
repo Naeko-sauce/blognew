@@ -1,12 +1,28 @@
 ---
+// Astro.props 接收父组件传递过来的参数。
+// 比如 <Social platform="github" username="user" />
 const { platform, username } = Astro.props;
 ---
+<!-- 
+  Astro 组件的样式块。
+  这里的样式默认是 Scoped（局部作用域），只会影响当前组件内的元素。
+  所以这里的 a 标签样式不会影响到 Navigation 里的 a 标签。
+-->
 <style>
   a {
     padding: 0.5rem 1rem;
     color: white;
     background-color: #4c1d95;
     text-decoration: none;
+    border-radius: 4px;
+  }
+  a:hover {
+    background-color: #311261;
   }
 </style>
+<!-- 
+  动态生成链接。
+  使用了 JavaScript 模板字符串 (`...`) 来拼接 URL。
+  platform 和 username 变量会填充进去。
+-->
 <a href={`https://www.${platform}.com/${username}`}>{platform}</a>
