@@ -37,8 +37,20 @@
        模拟精神受到干扰时的幻觉。
   */
   text-shadow: 0 0 10px #00ff7f, 2px 2px 0px #ff1515;
-  transform: scale(1.1);
    border: 1px solid #00ff7f;
+  /* 
+  transform (变换)：
+
+中文意思：改变元素的形状或位置。
+作用：可以旋转、缩放、倾斜或移动元素。
+语法：transform: 变换函数;
+例子：transform: rotate(45deg); 旋转45度
+    变换 (核心魔法)：
+    这里用了 scale(1.1)，表示将元素放大1.1倍。
+    这会使文字看起来更突出，模拟被选中的效果。
+  */
+  transform: scale(1.1);
+  
    border-radius: 4px;
   }
  }
