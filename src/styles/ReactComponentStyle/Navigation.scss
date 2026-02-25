@@ -22,36 +22,45 @@
   &:hover,&:active,&:focus{
     color: #00ff7f;
      background-color: rgba(0, 50, 20, 0.9);
-      /* 
-      text-shadow (文字阴影)：
+    /* 
+    text-shadow (文字阴影)：
 
-中文意思：给文字加阴影。
-作用：创造发光、立体或模糊的效果。
-语法：x偏移 y偏移 模糊半径 颜色。
-例子：text-shadow: 0 0 5px red; 红色光晕
+    中文意思：给文字加阴影。
+    作用：创造发光、立体或模糊的效果。
+    语法：x偏移 y偏移 模糊半径 颜色。
+    例子：text-shadow: 0 0 5px red; 红色光晕
+    
     文字阴影 (核心魔法)：
     这里用了两层阴影：
-    1. 0 0 5px ... : 第一层是绿色的光晕，让文字看起来在发光。
+    1. 0 0 10px ... : 第一层是绿色的光晕，让文字看起来在发光。
     2. 2px 2px 0px ... : 第二层是深红色的硬阴影，向右下偏移。
        这种红绿撞色会产生一种视觉上的“错位感”和“不适感”，
        模拟精神受到干扰时的幻觉。
   */
   text-shadow: 0 0 10px #00ff7f, 2px 2px 0px #ff1515;
-  //  border: 1px solid #00ff7f;
-  /* 
-  transform (变换)：
 
-中文意思：改变元素的形状或位置。
-作用：可以旋转、缩放、倾斜或移动元素。
-语法：transform: 变换函数;
-例子：transform: rotate(45deg); 旋转45度
+  /* 
+    transform (变换)：
+
+    中文意思：改变元素的形状或位置。
+    作用：可以旋转、缩放、倾斜或移动元素。
+    语法：transform: 变换函数;
+    例子：transform: rotate(45deg); 旋转45度
+    
     变换 (核心魔法)：
     这里用了 scale(1.1)，表示将元素放大1.1倍。
     这会使文字看起来更突出，模拟被选中的效果。
   */
   transform: scale(1.1);
   
-   border-radius: 4px;
+  /* 
+    border (边框)：
+    
+    加一个亮绿色的边框，强调选中状态。
+    border-radius: 圆角，让发光更柔和。
+  */
+  // border: 1px solid #00ff7f;
+  border-radius: 4px;
   }
  }
  
