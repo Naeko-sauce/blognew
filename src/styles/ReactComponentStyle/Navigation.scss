@@ -62,6 +62,17 @@
   // border: 1px solid #00ff7f;
   border-radius: 4px;
   }
+  /* 
+  电脑端优化：
+  @media (hover: hover) 检测设备是否支持鼠标悬停。
+  如果是电脑，我们就把过渡时间设为 0.3s。
+  这样鼠标移上去的时候，颜色是慢慢变的，显得很高级。
+*/
+@media (hover: hover) {
+  
+    transition: all 0.3s ease;
+  
+}
  }
  
 }
